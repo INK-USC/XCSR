@@ -2,12 +2,12 @@
 layout: default
 title: Intro
 nav_order: 1
-description: "XCSR | Open-Ended Common-Sense Reasoning "
+description: "XCSR | Cross-lingual Commonsense Reasoning"
 permalink: /
 last_modified_date: Jun 5th 2021
 ---
  
-# XCSR: <br> Open-Ended Common-Sense Reasoning 
+# XCSR: <br> Cross-lingual Commonsense Reasoning
 {: .fs-7 .fw-700 .text-blue-300 }
 
 ---
