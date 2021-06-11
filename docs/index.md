@@ -9,33 +9,46 @@ last_modified_date: Jun 5th 2021
  
 # Common Sense Beyond English: <br> Evaluating and Improving Multilingual Language Models for Commonsense Reasoning
 {: .fs-7 .fw-700 .text-blue-300 }
-
----
+<br>
 <span class="fs-2">
 [Paper](){: target="_blank" .btn .btn-green .mr-1 .fs-3}
-[Github](https://github.com/yuchenlin/XCSR/){: target="_blank" .btn .btn-purple .mr-1 .fs-3 }
+[Github](https://github.com/INK-USC/XCSR/){: target="_blank" .btn .btn-purple .mr-1 .fs-3 }
 <!-- [Video](https://mega.nz/file/5SpQjJKS#J82pfZVDzy3r4aWdNF4R6O8EP5gsepbY20vYihANfgE){: target="_blank" .btn .btn-blue .mr-1 .fs-3 }
 [Slides](/opencsr_naacl_slides.pptx){: target="_blank" .btn .btn-red .mr-1 .fs-3 } -->
-</span>
-
-
-<!--
---- 
-<span class="fs-2">
-[Data](/data){: .btn .btn-green .mr-1 }
-[Methods](/methods){: .btn .btn-purple .mr-1 }
-[Metrics](/metrics){: .btn .btn-blue .mr-1 }
-[Leaderboard](/leaderboard){: .btn .btn-red .mr-1 }
-</span>
--->
+</span> 
 
 ---
-[The site is under development. Please email [***yuchen.lin@usc.edu***] if you have any questions.](){: .btn .btn-red .fs-4 target="_blank"}
+
 
 <!-- ![DrFact](/images/poaster.png){: style="text-align:center; display:block; margin-left: auto; margin-right: auto;" width="100%"} -->
 
-<!-- This is the project site for the paper, [_Differentiable Open-Ended Commonsense Reasoning_](https://www.aclweb.org/anthology/2021.naacl-main.366/){: target="_blank"}, by [_Bill Yuchen Lin_](https://yuchenlin.xyz/){: target="_blank"}, [_Haitian Sun_](https://scholar.google.com/citations?user=opSHsTQAAAAJ&hl=en){: target="_blank"}, [_Bhuwan Dhingra_](http://www.cs.cmu.edu/~bdhingra/){: target="_blank"}, [_Manzil Zaheer_](https://scholar.google.com/citations?user=A33FhJMAAAAJ&hl=en){: target="_blank"}, [_Xiang Ren_](http://ink-ron.usc.edu/xiangren/){: target="_blank"}, and [_William W. Cohen_](https://wwcohen.github.io/){: target="_blank"}, in Proc. of [*NAACL 2021*](https://2021.naacl.org/){: target="_blank"}. 
+<!-- This is the project site for the paper, [_Differentiable Cross-Lingual Commonsense Reasoning_](https://www.aclweb.org/anthology/2021.naacl-main.366/){: target="_blank"}, by [_Bill Yuchen Lin_](https://yuchenlin.xyz/){: target="_blank"}, [_Haitian Sun_](https://scholar.google.com/citations?user=opSHsTQAAAAJ&hl=en){: target="_blank"}, [_Bhuwan Dhingra_](http://www.cs.cmu.edu/~bdhingra/){: target="_blank"}, [_Manzil Zaheer_](https://scholar.google.com/citations?user=A33FhJMAAAAJ&hl=en){: target="_blank"}, [_Xiang Ren_](http://ink-ron.usc.edu/xiangren/){: target="_blank"}, and [_William W. Cohen_](https://wwcohen.github.io/){: target="_blank"}, in Proc. of [*NAACL 2021*](https://2021.naacl.org/){: target="_blank"}. 
 This is a joint work by Google Research and USC. -->
+
+ 
+<!-- ##  -->
+
+***Abstract.*** Commonsense reasoning research has so far been limited to English.
+We aim to evaluate and improve popular multilingual language models (ML-LMs) to help advance commonsense reasoning (CSR) beyond English.
+We collect the Mickey corpus, consisting of 561k sentences in 11 different languages, which
+can be used for analyzing and improving ML-LMs.
+We propose ***Mickey Probe***, a language-agnostic  probing task for fairly evaluating the common sense of popular ML-LMs across different languages.
+In addition, we also create two new datasets, **X-CSQA** and **X-CODAH**, by translating their English versions to **15** other languages, so that we can evaluate popular ML-LMs for cross-lingual commonsense reasoning.
+To improve the performance beyond English, 
+we propose a simple yet effective method --- ***multilingual contrastive pre-training*** (MCP).
+It significantly enhances sentence representations, yielding a large performance gain on both benchmarks.
+
+
+<!-- ## Website  -->
+Herein, we provide our resources and method for studying cross-lingual commonsense reasoning.
+
+- MickeyCorpus and MickeyProbes
+- XCSR datasets (i.e., X-CSQA and X-CODAH)
+- The Multilingual Contrastive Pre-training (MCP) method
+
+We also build a leaderboard **[X-CSR]()** so that people can compare their cross-lingual/multilingual models with each other in a unified evaluation protocol like [X-GLUE](https://microsoft.github.io/XGLUE/){: target="_blank"} and [XTREME](https://sites.research.google/xtreme){: target="_blank"}.
+
+## Citation
 
 ```bibtex
 @inproceedings{lin-etal-2021-differentiable,
@@ -46,26 +59,6 @@ This is a joint work by Google Research and USC. -->
     note={to appear}
 }
 ```
----
- 
-### Abstract
-Current commonsense reasoning research  focuses on developing models that use commonsense knowledge to answer *multiple-choice* questions.
-However, systems designed to answer multiple-choice questions may not be useful in applications that do not provide a small list of candidate answers to choose from.
-As a step towards making commonsense reasoning research more realistic and useful, 
-we propose to study open-ended commonsense reasoning (XCSR) --- the task of answering a commonsense question without any pre-defined choices --- using as a resource only a knowledge corpus of commonsense facts written in natural language.
 
+[The site is under development. Please email [***yuchen.lin@usc.edu***] if you have any questions.](){: .btn .btn-red .fs-4 target="_blank"}
 
-XCSR is challenging due to a large decision space, and because many questions require implicit multi-hop reasoning.
-As an approach to XCSR, we propose **_DrFact_**, an efficient Differentiable model for multi-hop Reasoning over knowledge Facts.
-To evaluate XCSR methods, 
-we adapt three popular multiple-choice datasets, and collect multiple new answers to each test question via crowd-sourcing.
-Experiments show that DrFact outperforms strong baseline methods by a large margin.
-
-
-### Overview of the proposed DrFact method
-We propose DrFact, a multi-hop reasoning method for XCSR. 
-Instead of using structured KGs limited to facts with binary relations, 
-we focus on reasoning with a knowledge corpus consisting of generic commonsense facts.
-We formulate multi-hop reasoning as transitions over a hyper-graph, where nodes are concepts (i.e., noun chunks) and hyperedges as facts (i.e., fact sentences). DrFact iteratively merges MIPS results from dense fact index and sparse fact-to-fact matrix, in a differentiable way for end-to-end learning. The below figures show 1) pre-computing steps for representing a knowledge corpus (e.g., GenericsKB), 2) the formulation of multi-hop reasoning via iterative fact-following, and 3) the concrete implementation of differentiable fact-follow operations.
-
-![DrFact](/images/opencsr_t3.png){: style="text-align:center; display:block; margin-left: auto; margin-right: auto;" width="100%"}

@@ -9,7 +9,7 @@ color_scheme: opencsr
 logo: "ocs_logo.png"
 
 # Changes
-title: XCSR | Open-Ended Common-sense Reasoning 
+title: XCSR | Cross-Lingual Common-sense Reasoning 
 email: yuchen.lin@usc.edu
 description: >- # this means to ignore newlines until "baseurl:"
   XCSR's project page. 
