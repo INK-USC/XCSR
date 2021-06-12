@@ -5,7 +5,7 @@ include: [".well-known"]
 # Theme
 theme: "just-the-docs"
 # remote_theme: pmarsceill/just-the-docs
-color_scheme: opencsr
+color_scheme: xcsr
 logo: "ocs_logo.png"
 
 # Changes
