@@ -51,7 +51,7 @@ We also build a leaderboard **[X-CSR]()** so that people can compare their cross
 ## Citation
 
 ```bibtex
-@inproceedings{lin-etal-2021-differentiable,
+@inproceedings{lin-etal-2021-xcsr,
     title = "Common Sense Beyond English: Evaluating and Improving Multilingual Language Models for Commonsense Reasoning",
     author = "Lin, Bill Yuchen and Lee, Seyeon and Qiao, Xiaoyang and Ren, Xiang",
     booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics (ACL-IJCNLP 2021)",
@@ -59,6 +59,6 @@ We also build a leaderboard **[X-CSR]()** so that people can compare their cross
     note={to appear}
 }
 ```
-
-[The site is under development. Please email [***yuchen.lin@usc.edu***] if you have any questions.](){: .btn .btn-red .fs-4 target="_blank"}
+<!-- 
+[The site is under development. Please email [***yuchen.lin@usc.edu***] if you have any questions.](){: .btn .btn-red .fs-4 target="_blank"} -->
 
