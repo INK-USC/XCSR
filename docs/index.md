@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Intro
+title: Home
 nav_order: 1
 description: "Common Sense Beyond English: Evaluating and Improving Multilingual Language Models for Commonsense Reasoning"
 permalink: /
@@ -30,7 +30,7 @@ This is a joint work by Google Research and USC. -->
 
 ***Abstract.*** Commonsense reasoning research has so far been limited to English.
 We aim to evaluate and improve popular multilingual language models (ML-LMs) to help advance commonsense reasoning (CSR) beyond English.
-We collect the Mickey corpus, consisting of 561k sentences in 11 different languages, which
+We collect the ***Mickey Corpus***, consisting of 561k sentences in 11 different languages, which
 can be used for analyzing and improving ML-LMs.
 We propose ***Mickey Probe***, a language-agnostic  probing task for fairly evaluating the common sense of popular ML-LMs across different languages.
 In addition, we also create two new datasets, **X-CSQA** and **X-CODAH**, by translating their English versions to **15** other languages, so that we can evaluate popular ML-LMs for cross-lingual commonsense reasoning.
@@ -42,9 +42,9 @@ It significantly enhances sentence representations, yielding a large performance
 <!-- ## Website  -->
 Herein, we provide our resources and method for studying cross-lingual commonsense reasoning.
 
-- MickeyCorpus and MickeyProbes
-- XCSR datasets (i.e., X-CSQA and X-CODAH)
-- The Multilingual Contrastive Pre-training (MCP) method
+- The Mickey Corpus and Mickey Probes for analyzing and pre-training ML-LMs.
+- Two X-CSR datasets (i.e., X-CSQA and X-CODAH) for evaluation.
+- The multilingual contrastive pre-training (MCP) method for improving ML-LMs' performance.
 
 We also build a leaderboard **[X-CSR]()** so that people can compare their cross-lingual/multilingual models with each other in a unified evaluation protocol like [X-GLUE](https://microsoft.github.io/XGLUE/){: target="_blank"} and [XTREME](https://sites.research.google/xtreme){: target="_blank"}.
 
