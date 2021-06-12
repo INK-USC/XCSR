@@ -37,25 +37,6 @@ The total 16 languages for X-CSR: `{en, zh, de, es, fr, it, jap, nl, pl, pt, ru,
 
 
 
-Please cite their paper if you use the data:
-
-```bibtex
-
-@inproceedings{Talmor2019commonsenseqaaq,
- address = {Minneapolis, Minnesota},
- author = {Talmor, Alon  and
-Herzig, Jonathan  and
-Lourie, Nicholas  and
-Berant, Jonathan},
- booktitle = {Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)},
- doi = {10.18653/v1/N19-1421},
- pages = {4149--4158},
- publisher = {Association for Computational Linguistics},
- title = {{C}ommonsense{QA}: A Question Answering Challenge Targeting Commonsense Knowledge},
- url = {https://www.aclweb.org/anthology/N19-1421},
- year = {2019}
-}
-```
 
 ## X-CSQA
 
@@ -112,20 +93,42 @@ Note that the question tags are `{i, n, p, r, q, o}`, which stands for `{"idioms
 }
 ```
 
-Please cite the paper here if you use the data here:
+## Citations
+
+Please cite the papers here if you use the X-CSR datasets:
+
 ```bibtex
+# X-CSR
+@inproceedings{lin-etal-2021-xcsr,
+    title = "Common Sense Beyond English: Evaluating and Improving Multilingual Language Models for Commonsense Reasoning",
+    author = "Lin, Bill Yuchen and Lee, Seyeon and Qiao, Xiaoyang and Ren, Xiang",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics (ACL-IJCNLP 2021)",
+    year = "2021",
+    note={to appear}
+}
+
+# CSQA
+@inproceedings{Talmor2019commonsenseqaaq,
+ address = {Minneapolis, Minnesota},
+ author = {Talmor, Alon  and Herzig, Jonathan  and Lourie, Nicholas and Berant, Jonathan},
+ booktitle = {Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)},
+ doi = {10.18653/v1/N19-1421},
+ pages = {4149--4158},
+ publisher = {Association for Computational Linguistics},
+ title = {CommonsenseQA: A Question Answering Challenge Targeting Commonsense Knowledge},
+ url = {https://www.aclweb.org/anthology/N19-1421},
+ year = {2019}
+}
+
+# CODAH
 @inproceedings{Chen2019CODAHAA,
  address = {Minneapolis, USA},
- author = {Chen, Michael  and
-D{'}Arcy, Mike  and
-Liu, Alisa  and
-Fernandez, Jared  and
-Downey, Doug},
+ author = {Chen, Michael  and D{'}Arcy, Mike  and Liu, Alisa  and Fernandez, Jared  and Downey, Doug},
  booktitle = {Proceedings of the 3rd Workshop on Evaluating Vector Space Representations for {NLP}},
  doi = {10.18653/v1/W19-2008},
  pages = {63--69},
  publisher = {Association for Computational Linguistics},
- title = {{CODAH}: An Adversarially-Authored Question Answering Dataset for Common Sense},
+ title = {CODAH: An Adversarially-Authored Question Answering Dataset for Common Sense},
  url = {https://www.aclweb.org/anthology/W19-2008},
  year = {2019}
 }
