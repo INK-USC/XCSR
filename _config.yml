@@ -20,7 +20,7 @@ github_username:  yuchenlin
 
 # Back to top link
 back_to_top: true
-back_to_top_text: "Back to top"
+back_to_top_text: '<a href="" class="btn btn-red fs-4">The site is under development. Please email [<strong><em>yuchen.lin@usc.edu</em></strong>] if you have any questions.</a>'
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
