@@ -112,3 +112,9 @@ Please **download the corpus** [here](https://forms.gle/fCxN1YAyqKpQ4cXNA){: tar
 For naturally inducing sentence scores from a masked ML-LM,
 we use the pseudo-log-likelihood (PLL) following the [mlm-scoring](https://www.aclweb.org/anthology/2020.acl-main.240/){: target="_blank"} paper.
 Although we mainly studied the mask-based ML-LMs (e.g., mBERT, XLM, XLM-R), the MickeyProbe task itself is not limited.
+
+***More Findings.***{: .text-red-100}
+Please check more in our paper.
+
+***Usage for Multi-lingual Contrastive Pre-training***{: .text-red-100}
+See more details in our paper and the code [here](https://github.com/INK-USC/XCSR/tree/main/mcp_generation){: target="_blank"}.
