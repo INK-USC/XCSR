@@ -19,9 +19,6 @@ To improve the performance beyond English,
 we propose a simple yet effective method --- ***multilingual contrastive pre-training*** (MCP).
 It significantly enhances sentence representations, yielding a large performance gain on both benchmarks.
 
-![Intro](https://inklab.usc.edu/XCSR/images/intro.png)
-
-
 ## Resources 
 
 We provide our resources and method for studying cross-lingual commonsense reasoning.
@@ -32,7 +29,7 @@ We provide our resources and method for studying cross-lingual commonsense reaso
 
 We also build **[X-CSR leaderboard](https://inklab.usc.edu/XCSR/leaderboard)** so that people can compare their cross-lingual/multilingual models with each other in a unified evaluation protocol.
 
-
+![Intro](https://inklab.usc.edu/XCSR/images/intro.png)
 
 ## Citation
 
