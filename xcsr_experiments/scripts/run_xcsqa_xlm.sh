@@ -18,7 +18,7 @@ if [ "$MODE" = "self-train" ]; then
         if [[ "$active_langs" == *"$lang"* ]]; then
             echo "$lang - $lr - $warm"
             DATA_DIR=corpus/CSQA/X-CSQA/${lang}
-            MODEL_DIR=/mnt/nfs1/bill/saved_models_xcsqa/xlm_${lang}
+            MODEL_DIR=/path/to/saved_models_xcsqa/xlm_${lang}
             CUDA_VISIBLE_DEVICES=6,7,4,5 python methods/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "xlm_${lang}|(${lr}-${warm})" \
@@ -60,7 +60,7 @@ elif [ "$MODE" = "zero-shot" ]; then
         do
             echo "en-${lang} on ${split}"
             DATA_DIR=corpus/CSQA/X-CSQA/${lang}
-            MODEL_DIR=/mnt/nfs1/bill/saved_models_xcsqa/xlm_en
+            MODEL_DIR=/path/to/saved_models_xcsqa/xlm_en
             CUDA_VISIBLE_DEVICES=7 python methods/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "" \
@@ -90,5 +90,5 @@ fi
 # declare -a langs=("en") 
 # for lang in "${langs[@]}" 
 # do        
-#     mv /mnt/nfs1/bill/saved_models_xcsqa/xlm_${lang} /mnt/nfs1/bill/saved_models_xcsqa/xlm_${lang}_backup
+#     mv /path/to/saved_models_xcsqa/xlm_${lang} /path/to/saved_models_xcsqa/xlm_${lang}_backup
 # done

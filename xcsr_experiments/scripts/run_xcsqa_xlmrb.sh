@@ -7,7 +7,7 @@ if [ "$MODE" = "self-train" ]; then
     for lang in "${langs[@]}" 
     do
         DATA_DIR=corpus/CSQA/X-CSQA/${lang}
-        MODEL_DIR=/mnt/nfs1/bill/saved_models_xcsqa/xlmrb_${lang}
+        MODEL_DIR=/path/to/saved_models_xcsqa/xlmrb_${lang}
         CUDA_VISIBLE_DEVICES=1,2,3,0 python methods/run_mcqa.py \
             --task_name xcsr \
             --exp_name xlmrb_${lang} \
@@ -48,7 +48,7 @@ elif [ "$MODE" = "zero-shot" ]; then
         for split in "${splits[@]}" 
         do
             DATA_DIR=corpus/CSQA/X-CSQA/${lang}
-            MODEL_DIR=/mnt/nfs1/bill/saved_models_xcsqa/xlmrb_en
+            MODEL_DIR=/path/to/saved_models_xcsqa/xlmrb_en
             CUDA_VISIBLE_DEVICES=7  python methods/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "" \

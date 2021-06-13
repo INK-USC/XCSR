@@ -1,7 +1,7 @@
 # wandb login [your token here]
 
 DATA_DIR=corpus/CODAH/X-CODAH/en
-MODEL_DIR=/mnt/nfs1/bill/saved_models_xcsqa/robertalarge_en
+MODEL_DIR=/path/to/saved_models_xcsqa/robertalarge_en
 CUDA_VISIBLE_DEVICES=0,1,2,5  python methods/run_mcqa.py \
     --task_name xcsr \
     --model_name_or_path roberta-large \

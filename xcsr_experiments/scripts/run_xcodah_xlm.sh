@@ -20,7 +20,7 @@ if [ "$MODE" = "self-train" ]; then
         if [[ "$active_langs" == *"$lang"* ]]; then
             echo "$lang - $lr - $warm"
             DATA_DIR=corpus/CODAH/X-CODAH/${lang}
-            MODEL_DIR=/mnt/nfs1/bill/saved_models_xcodah/xlm_${lang}
+            MODEL_DIR=/path/to/saved_models_xcodah/xlm_${lang}
             CUDA_VISIBLE_DEVICES=6,7 python methods/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "xcodah:xlm_${lang}|(${lr}-${warm})" \
@@ -60,7 +60,7 @@ elif [ "$MODE" = "zero-shot" ]; then
         for split in "${splits[@]}" 
         do
             DATA_DIR=corpus/CODAH/X-CODAH/${lang}
-            MODEL_DIR=/mnt/nfs1/bill/saved_models_xcodah/xlm_en
+            MODEL_DIR=/path/to/saved_models_xcodah/xlm_en
             CUDA_VISIBLE_DEVICES=7 python methods/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "" \
@@ -90,5 +90,5 @@ fi
 # declare -a langs=("en") 
 # for lang in "${langs[@]}" 
 # do        
-#     mv /mnt/nfs1/bill/saved_models_xcodah/xlm_${lang} /mnt/nfs1/bill/saved_models_xcodah/xlm_${lang}_backup
+#     mv /path/to/saved_models_xcodah/xlm_${lang} /path/to/saved_models_xcodah/xlm_${lang}_backup
 # done

@@ -3,7 +3,7 @@ MODE=$1
 if [ "$MODE" = "pretrain" ]; then
     echo "Pre-train the MBERT with MCP examples" 
     DATA_DIR=corpus/XCSR
-    MODEL_DIR=/mnt/nfs1/bill/saved_models_xcsqa/mbert_pretrained
+    MODEL_DIR=/path/to/saved_models_xcsqa/mbert_pretrained
     lr=1e-5
     CUDA_VISIBLE_DEVICES=0,1,2,3  python methods/run_mcqa.py \
         --task_name xcsr \
@@ -45,11 +45,11 @@ elif [ "$MODE" = "xcsqa-finetune" ]; then
         if [[ "$active_langs" == *"$lang"* ]]; then 
             echo "$lang - $lr - $warm"
             DATA_DIR=corpus/CSQA/X-CSQA/${lang}
-            MODEL_DIR=/mnt/nfs1/bill/saved_models_xcsqa/xcsr_mbert_${lang}
+            MODEL_DIR=/path/to/saved_models_xcsqa/xcsr_mbert_${lang}
             CUDA_VISIBLE_DEVICES=4,5  python methods/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name xcsr-mbert_${lang} \
-                --model_name_or_path /mnt/nfs1/bill/saved_models_xcsqa/mbert_pretrained \
+                --model_name_or_path /path/to/saved_models_xcsqa/mbert_pretrained \
                 --do_train \
                 --do_eval \
                 --data_dir $DATA_DIR \
@@ -87,7 +87,7 @@ elif [ "$MODE" = "xcsqa-infer" ]; then
         for split in "${splits[@]}" 
         do
             DATA_DIR=corpus/CSQA/X-CSQA/${lang}
-            MODEL_DIR=/mnt/nfs1/bill/saved_models_xcsqa/xcsr_mbert_en
+            MODEL_DIR=/path/to/saved_models_xcsqa/xcsr_mbert_en
             CUDA_VISIBLE_DEVICES=7  python methods/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "" \

@@ -11,7 +11,7 @@ if [ "$MODE" = "self-train" ]; then
         lr=${lrs[$index]}
 
         DATA_DIR=corpus/CSQA/X-CSQA/${lang}
-        MODEL_DIR=/mnt/nfs1/bill/saved_models_xcsqa/mbert_${lang}
+        MODEL_DIR=/path/to/saved_models_xcsqa/mbert_${lang}
         CUDA_VISIBLE_DEVICES=3,0 python methods/run_mcqa.py \
             --task_name xcsr \
             --exp_name mbert_${lang} \
@@ -53,7 +53,7 @@ elif [ "$MODE" = "zero-shot" ]; then
         for split in "${splits[@]}" 
         do
             DATA_DIR=corpus/CSQA/X-CSQA/${lang}
-            MODEL_DIR=/mnt/nfs1/bill/saved_models_xcsqa/mbert_en
+            MODEL_DIR=/path/to/saved_models_xcsqa/mbert_en
             CUDA_VISIBLE_DEVICES=7  python methods/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "" \
@@ -80,7 +80,7 @@ elif [ "$MODE" = "self-infer" ]; then
         for split in "${splits[@]}" 
         do
             DATA_DIR=corpus/CSQA/X-CSQA/${lang}
-            MODEL_DIR=/mnt/nfs1/bill/saved_models_xcsqa/mbert_${lang}
+            MODEL_DIR=/path/to/saved_models_xcsqa/mbert_${lang}
             CUDA_VISIBLE_DEVICES=1,2,3,4,5,6  python methods/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "" \

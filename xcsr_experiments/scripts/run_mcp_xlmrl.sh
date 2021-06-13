@@ -3,7 +3,7 @@ MODE=$1
 if [ "$MODE" = "pretrain" ]; then
     echo "Pre-train the xlmrl with MCP examples" 
     DATA_DIR=corpus/XCSR
-    MODEL_DIR=/mnt/nfs1/bill/saved_models_xcsqa/xlmrl_pretrained
+    MODEL_DIR=/path/to/saved_models_xcsqa/xlmrl_pretrained
     lr=5e-6
     CUDA_VISIBLE_DEVICES=0,1,2,3  python methods/run_mcqa.py \
         --task_name xcsr \
@@ -52,11 +52,11 @@ elif [ "$MODE" = "xcsqa-finetune" ]; then
         if [[ "$active_langs" == *"$lang"* ]]; then 
             echo "$lang - $lr - $warm"
             DATA_DIR=corpus/CSQA/X-CSQA/${lang}
-            OUTPUT_DIR=/mnt/nfs1/bill/saved_models_xcsqa/xcsr_xlmrl_${lang}
+            OUTPUT_DIR=/path/to/saved_models_xcsqa/xcsr_xlmrl_${lang}
             CUDA_VISIBLE_DEVICES=6,7 python methods/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "pted+xlmrl_${lang}|(${lr}-${warm})" \
-                --model_name_or_path /mnt/nfs1/bill/saved_models_xcsqa/xlmrl_pretrained \
+                --model_name_or_path /path/to/saved_models_xcsqa/xlmrl_pretrained \
                 --do_train --do_eval --data_dir $DATA_DIR \
                 --train_file ${DATA_DIR}/train.jsonl \
                 --val_file ${DATA_DIR}/dev.jsonl \
@@ -87,10 +87,10 @@ elif [ "$MODE" = "xcsqa-infer" ]; then
      echo "En-X zero-shot cross-lingual transfer" 
     declare -a langs=("en" "zh" "de" "es" "fr" "it" "jap" "nl" "pl" "pt" "ru" "ar" "sw" "ur" "vi" "hi")
     # declare -a langs=("jap")
-    MODEL_DIR=/mnt/nfs1/bill/saved_models_xcsqa/xcsr_xlmrl_en   # TODO: add tokenizer_config.json special_tokens_map.json sentencepiece.bpe.model
-    # cp /mnt/nfs1/bill/saved_models_xcsqa/xcsr_xlmrl_en/tokenizer_config.json $MODEL_DIR/
-    # cp /mnt/nfs1/bill/saved_models_xcsqa/xcsr_xlmrl_en/special_tokens_map.json $MODEL_DIR/
-    # cp /mnt/nfs1/bill/saved_models_xcsqa/xcsr_xlmrl_en/sentencepiece.bpe.model $MODEL_DIR/
+    MODEL_DIR=/path/to/saved_models_xcsqa/xcsr_xlmrl_en   # TODO: add tokenizer_config.json special_tokens_map.json sentencepiece.bpe.model
+    # cp /path/to/saved_models_xcsqa/xcsr_xlmrl_en/tokenizer_config.json $MODEL_DIR/
+    # cp /path/to/saved_models_xcsqa/xcsr_xlmrl_en/special_tokens_map.json $MODEL_DIR/
+    # cp /path/to/saved_models_xcsqa/xcsr_xlmrl_en/sentencepiece.bpe.model $MODEL_DIR/
     declare -a splits=("test" "dev")
     for lang in "${langs[@]}" 
     do        
@@ -133,11 +133,11 @@ elif [ "$MODE" = "xcodah-finetune" ]; then
         if [[ "$active_langs" == *"$lang"* ]]; then 
             echo "$lang - $lr - $warm"
             DATA_DIR=corpus/CODAH/X-CODAH/${lang}
-            OUTPUT_DIR=/mnt/nfs1/bill/saved_models_xcodah/xcsr_xlmrl_${lang}
+            OUTPUT_DIR=/path/to/saved_models_xcodah/xcsr_xlmrl_${lang}
             CUDA_VISIBLE_DEVICES=0,1 python methods/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "xcodah:pted+xlmrl_${lang}|(${lr}-${warm})" \
-                --model_name_or_path /mnt/nfs1/bill/saved_models_xcsqa/xlmrl_pretrained \
+                --model_name_or_path /path/to/saved_models_xcsqa/xlmrl_pretrained \
                 --do_train --do_eval --data_dir $DATA_DIR \
                 --train_file ${DATA_DIR}/train.jsonl \
                 --val_file ${DATA_DIR}/dev.jsonl \
@@ -167,7 +167,7 @@ elif [ "$MODE" = "xcodah-finetune" ]; then
 elif [ "$MODE" = "xcodah-infer" ]; then
      echo "En-X zero-shot cross-lingual transfer" 
     declare -a langs=("en" "zh" "de" "es" "fr" "it" "jap" "nl" "pl" "pt" "ru" "ar" "sw" "ur" "vi" "hi")
-    MODEL_DIR=/mnt/nfs1/bill/saved_models_xcodah/xcsr_xlmrl_en   # TODO: add tokenizer_config.json special_tokens_map.json sentencepiece.bpe.model
+    MODEL_DIR=/path/to/saved_models_xcodah/xcsr_xlmrl_en   # TODO: add tokenizer_config.json special_tokens_map.json sentencepiece.bpe.model
     declare -a splits=("test" "dev")
     for lang in "${langs[@]}" 
     do        
