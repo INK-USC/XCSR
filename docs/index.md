@@ -37,10 +37,10 @@ This is a joint work by Google Research and USC. -->
 
 ***Abstract.***{: .text-red-100} Commonsense reasoning research has so far been limited to English.
 We aim to evaluate and improve popular multilingual language models (ML-LMs) to help advance commonsense reasoning (CSR) beyond English.
-We collect the ***Mickey Corpus***, consisting of 561k sentences in 11 different languages, which
+We collect the ***[Mickey Corpus](mickey#mickeycorpus)***, consisting of 561k sentences in 11 different languages, which
 can be used for analyzing and improving ML-LMs.
-We propose ***Mickey Probe***, a language-agnostic  probing task for fairly evaluating the common sense of popular ML-LMs across different languages.
-In addition, we also create two new datasets, **X-CSQA** and **X-CODAH**, by translating their English versions to **15** other languages, so that we can evaluate popular ML-LMs for cross-lingual commonsense reasoning.
+We propose ***[Mickey Probe](mickey)***, a language-agnostic  probing task for fairly evaluating the common sense of popular ML-LMs across different languages.
+In addition, we also create two new datasets, **[X-CSQA](xcsr_datasets#x-csqa)** and **[X-CODAH](xcsr_datasets#x-codah)**, by translating their English versions to **15** other languages, so that we can evaluate popular ML-LMs for cross-lingual commonsense reasoning.
 To improve the performance beyond English, 
 we propose a simple yet effective method --- ***multilingual contrastive pre-training*** (MCP).
 It significantly enhances sentence representations, yielding a large performance gain on both benchmarks.
@@ -69,6 +69,7 @@ We also build **[X-CSR leaderboard](/leaderboard)** so that people can compare t
     note={to appear}
 }
 ```
+{: .fs-6}
 <!-- 
 [The site is under development. Please email [***yuchen.lin@usc.edu***] if you have any questions.](){: .btn .btn-red .fs-4 target="_blank"} -->
 
