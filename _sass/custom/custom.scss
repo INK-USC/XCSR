@@ -52,3 +52,27 @@ code {
     white-space : pre-wrap !important;
 }
 
+th, td{
+  font-size: 12px !important;
+  min-width: 60px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(232, 242, 232, 0.5);
+  border-left: 1px solid #e8f2e8;
+  text-align: center;
+  }
+  @media (min-width: 31.25rem) {
+    th,
+    td {
+      font-size: 14px !important; } }
+  th:first-of-type,
+  td:first-of-type {
+    border-left: 0; 
+}
+
+th.model {
+    min-width: 120px;
+}
