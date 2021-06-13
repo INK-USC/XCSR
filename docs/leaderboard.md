@@ -6,6 +6,7 @@ nav_order: 4
 last_modified_date: Jun 5th 2021
 permalink: /leaderboard
 has_toc: true
+mathjax: true
 ---
 
 # Leaderboard
@@ -25,7 +26,7 @@ Coming soon.
     <th class='model'>Model</th>
     <th>Participant</th>
     <th>Date</th>
-    <th>avg</th>
+    <th><em>AVG</em></th>
     <th>en</th>
     <th>de</th>
     <th>it</th>
@@ -46,9 +47,9 @@ Coming soon.
 </thead>
 <tbody>
 <tr>
-    <td>MCP}{(XLM-R$_L$)</td>
-    <td></td>
-    <td></td>
+    <td>MCP(XLM-R-L)</td>
+    <td>USC-INK</td>
+    <td>06/21'</td>
     <td>58.3</td>
     <td>69.9</td>
     <td>60.7</td>
@@ -69,8 +70,8 @@ Coming soon.
 </tr>
 <tr>
     <td>XLM-R-L</td>
-    <td></td>
-    <td></td>
+    <td>USC-INK</td>
+    <td>06/21'</td>
     <td>56.0</td>
     <td>66.4</td>
     <td>59.6</td>
@@ -90,9 +91,9 @@ Coming soon.
     <td>46.6</td>
 </tr>
 <tr>
-    <td>MCP}{(XLM-R$_B$)</td>
-    <td></td>
-    <td></td>
+    <td>MCP(XLM-R-B)</td>
+    <td>USC-INK</td>
+    <td>06/21'</td>
     <td>43.6</td>
     <td>52.2</td>
     <td>47.6</td>
@@ -113,8 +114,8 @@ Coming soon.
 </tr>
 <tr>
     <td>XLM-R-B</td>
-    <td></td>
-    <td></td>
+    <td>USC-INK</td>
+    <td>06/21'</td>
     <td>42.4</td>
     <td>50.1</td>
     <td>45.8</td>
@@ -135,8 +136,8 @@ Coming soon.
 </tr>
 <tr>
     <td>mBERT</td>
-    <td></td>
-    <td></td>
+    <td>USC-INK</td>
+    <td>06/21'</td>
     <td>33.2</td>
     <td>42.9</td>
     <td>33.1</td>
@@ -157,8 +158,8 @@ Coming soon.
 </tr>
 <tr>
     <td>XLM-100</td>
-    <td></td>
-    <td></td>
+    <td>USC-INK</td>
+    <td>06/21'</td>
     <td>30.4</td>
     <td>42.7</td>
     <td>31.5</td>
@@ -190,7 +191,7 @@ Coming soon.
     <th class='model'>Model</th>
     <th>Participant</th>
     <th>Date</th>
-    <th>avg</th>
+    <th><em>AVG</em></th>
     <th>en</th>
     <th>de</th>
     <th>it</th>
@@ -211,9 +212,9 @@ Coming soon.
 </thead>
 <tbody>
 <tr>
-    <td>MCP}{(XLM-R$_L$)</td>
-    <td></td>
-    <td></td>
+    <td>MCP(XLM-R-L)</td>
+    <td>USC-INK</td>
+    <td>06/21'</td>
     <td>56.5</td>
     <td>69.5</td>
     <td>59.3</td>
@@ -233,9 +234,9 @@ Coming soon.
     <td>48.8</td>
 </tr>
 <tr>
-    <td>XLM-R$_{L}$</td>
-    <td></td>
-    <td></td>
+    <td>XLM-R-L</td>
+    <td>USC-INK</td>
+    <td>06/21'</td>
     <td>53.8</td>
     <td>66.7</td>
     <td>56.1</td>
@@ -255,9 +256,9 @@ Coming soon.
     <td>45.2</td>
 </tr>
 <tr>
-    <td>MCP}{(XLM-R$_B$)</td>
-    <td></td>
-    <td></td>
+    <td>MCP(XLM-R-B)</td>
+    <td>USC-INK</td>
+    <td>06/21'</td>
     <td>41.9</td>
     <td>52.1</td>
     <td>46.2</td>
@@ -277,9 +278,9 @@ Coming soon.
     <td>33.4</td>
 </tr>
 <tr>
-    <td>XLM-R$_{B}$</td>
-    <td></td>
-    <td></td>
+    <td>XLM-R-B</td>
+    <td>USC-INK</td>
+    <td>06/21'</td>
     <td>40.6</td>
     <td>51.5</td>
     <td>44.1</td>
@@ -300,8 +301,8 @@ Coming soon.
 </tr>
 <tr>
     <td>mBERT</td>
-    <td></td>
-    <td></td>
+    <td>USC-INK</td>
+    <td>06/21'</td>
     <td>30.4</td>
     <td>38.8</td>
     <td>29.6</td>
@@ -322,8 +323,8 @@ Coming soon.
 </tr>
 <tr>
     <td>XLM-100</td>
-    <td></td>
-    <td></td>
+    <td>USC-INK</td>
+    <td>06/21'</td>
     <td>26.7</td>
     <td>34.3</td>
     <td>26.7</td>
