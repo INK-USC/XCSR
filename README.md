@@ -1,4 +1,4 @@
-# Common Sense Beyond English: Evaluating and Improving Multilingual Language Models for Commonsense Reasoning
+# Common Sense Beyond English: Evaluating and Improving Multilingual LMs for Commonsense Reasoning
 
 This is the Github repository of our paper, ***"Common Sense Beyond English: Evaluating and Improving Multilingual Language Models for Commonsense Reasoning"*** (in Proc. of ACL2021) about [MickeyProbe](https://inklab.usc.edu/XCSR/mickey) and [X-CSR](https://inklab.usc.edu//XCSR/xcsr_datasets). The detailed information and the links to download our data are available on the project website: 
 [***https://inklab.usc.edu/XCSR/***](https://inklab.usc.edu/XCSR/).
