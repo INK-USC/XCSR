@@ -61,9 +61,9 @@ The ***MickeyCorpus*** is constructed on top of the OMCS corpus via adversarial 
 Please **download the corpus** [here](https://forms.gle/fCxN1YAyqKpQ4cXNA){: target="_blank"} 
 . We show a particular probe (in `en` and `zh` respectively) here:
 
-<table>
+<!-- <table>
 <tr>
-<td markdown="block" class="fs-3">
+<td markdown="block" class="fs-"> -->
 ```json
 # a line in "mickey_en.jsonl"
 {
@@ -80,8 +80,8 @@ Please **download the corpus** [here](https://forms.gle/fCxN1YAyqKpQ4cXNA){: tar
 }
 ```
 
-</td>
-<td markdown="block" class="fs-5">
+<!-- </td>
+<td markdown="block" class="fs-4"> -->
 ```json
 # a line in "mickey_zh.jsonl"
 {
@@ -97,9 +97,9 @@ Please **download the corpus** [here](https://forms.gle/fCxN1YAyqKpQ4cXNA){: tar
   "truth_id": 2
 }
 ```
-</td>
+<!-- </td>
 </tr>
-</table>
+</table> -->
 
 ## Analysis Results 
 
