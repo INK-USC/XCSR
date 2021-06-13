@@ -39,7 +39,7 @@ Simply put, one can see MickeyProbe as a multilingual, constrained version of th
 
 ## Task Formulation 
 
-![Mickey](/images/mickey.png){: style="text-align:center; display:block; margin-left: auto; margin-right: auto;" width="90%"}
+![Mickey](images/mickey.png){: style="text-align:center; display:block; margin-left: auto; margin-right: auto;" width="90%"}
 
 
 
