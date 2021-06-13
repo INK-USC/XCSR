@@ -1,0 +1,11 @@
+gluonnlp~=0.8.3
+regex
+sacrebleu
+mosestokenizer
+transformers~=3.3.1
+
+[dev]
+pylint
+pytest
+pytest-cov
+mypy
