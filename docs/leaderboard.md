@@ -19,7 +19,7 @@ Coming soon.
 
 ## X-CSQA Results
 
-<table>
+<table id='XCSQA'>
 <thead>
 <tr>
     <th class='model'>Model</th>
@@ -184,7 +184,7 @@ Coming soon.
 ## X-CODAH Results
 
 
-<table>
+<table id='XCODAH'>
 <thead>
 <tr>
     <th class='model'>Model</th>

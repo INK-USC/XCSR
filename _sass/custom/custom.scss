@@ -62,7 +62,6 @@ th, td{
   background-color: #fff;
   border-bottom: 1px solid rgba(232, 242, 232, 0.5);
   border-left: 1px solid #e8f2e8;
-  text-align: center;
   }
   @media (min-width: 31.25rem) {
     th,
@@ -75,4 +74,12 @@ th, td{
 
 th.model {
     min-width: 120px;
+}
+
+#XCSQA {
+    text-align: center;
+}
+
+#XCODAH {
+    text-align: center;
 }
