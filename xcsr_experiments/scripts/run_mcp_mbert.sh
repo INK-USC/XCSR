@@ -45,7 +45,7 @@ elif [ "$MODE" = "xcsqa-finetune" ]; then
         if [[ "$active_langs" == *"$lang"* ]]; then 
             echo "$lang - $lr - $warm"
             DATA_DIR=corpus/CSQA/X-CSQA/${lang}
-            MODEL_DIR=/path/to/saved_models_xcsqa/xcsr_mbert_${lang}
+            MODEL_DIR=/path/to/saved_models_xcsqa/mcp_mbert_${lang}
             CUDA_VISIBLE_DEVICES=4,5  python methods/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name xcsr-mbert_${lang} \
@@ -74,7 +74,7 @@ elif [ "$MODE" = "xcsqa-finetune" ]; then
                 --overwrite_cache \
                 --do_predict \
                 --test_file ${DATA_DIR}/test.jsonl \
-                --prediction_output ${DATA_DIR}/results/xcsr_self_test_mbert_result.npy 
+                --prediction_output ${DATA_DIR}/results/mcp_self_test_mbert_result.npy 
         fi
     done
 elif [ "$MODE" = "xcsqa-infer" ]; then
@@ -87,7 +87,7 @@ elif [ "$MODE" = "xcsqa-infer" ]; then
         for split in "${splits[@]}" 
         do
             DATA_DIR=corpus/CSQA/X-CSQA/${lang}
-            MODEL_DIR=/path/to/saved_models_xcsqa/xcsr_mbert_en
+            MODEL_DIR=/path/to/saved_models_xcsqa/mcp_mbert_en
             CUDA_VISIBLE_DEVICES=7  python methods/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "" \
@@ -102,7 +102,7 @@ elif [ "$MODE" = "xcsqa-infer" ]; then
                 --per_device_eval_batch_size=16 \
                 --fp16 --overwrite_output \
                 --overwrite_cache \
-                --prediction_output ${DATA_DIR}/results/xcsr_en-${lang}_${split}_mbert_result.npy
+                --prediction_output ${DATA_DIR}/results/mcp_en-${lang}_${split}_mbert_result.npy
         done
     done
 else
