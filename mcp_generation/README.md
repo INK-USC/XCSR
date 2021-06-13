@@ -10,7 +10,7 @@ Please see the details in our paper. Change the path in `generate_mcp_data.py` a
 
 Here we show an example in the `mcp_data.jsonl`:
 
-```json
+```python
 {
   "id": "1472b1b7350f4fcb",
   "truth_id": 1,    # the id of the correct assertion.
