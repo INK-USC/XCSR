@@ -2,7 +2,7 @@
 
 ## Download the MickeyCorpus
 
-Check it here: 
+Check it here: https://inklab.usc.edu//XCSR/mickey
 
 ## Generating the MCP data
 
