@@ -63,7 +63,7 @@ Please **download the corpus** [here](https://forms.gle/fCxN1YAyqKpQ4cXNA){: tar
 
 <table>
 <tr>
-<td markdown="block" class="fs-5">
+<td markdown="block" class="fs-3">
 ```json
 # a line in "mickey_en.jsonl"
 {

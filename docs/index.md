@@ -13,7 +13,7 @@ p, li{
 }
 </style>
  
-# Common Sense Beyond English: <br> Evaluating and Improving Multilingual Language Models for Commonsense Reasoning
+# Common Sense Beyond English:  Evaluating and Improving Multilingual Language Models for Commonsense Reasoning
 {: .fs-7 .fw-700 .text-blue-300 }
 <br>
 <span class="fs-2">

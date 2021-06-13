@@ -69,7 +69,7 @@ There are **8,888** examples for *training* in English, **1,000** for *developme
   "answerKey": "D"    # hidden for test data.
 }
 ```
-{: .fs-6}
+{: .fs-4}
 
 
 ## X-CODAH
@@ -100,7 +100,7 @@ Note that the question tags are `{i, n, p, r, q, o}`, which stands for `{"idioms
   "answerKey": "B"  # hidden for test data.
 }
 ```
-{: .fs-6}
+{: .fs-4}
 
 ## Citations
 
