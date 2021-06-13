@@ -19,7 +19,7 @@ if [ "$MODE" = "en_train" ]; then
             echo "$lang - $lr - $warm"
             DATA_DIR=/path/to/X-CSQA/${lang}
             MODEL_DIR=/path/to/saved_models_xcsqa/xlm_${lang}
-            CUDA_VISIBLE_DEVICES=6,7,4,5 python methods/run_mcqa.py \
+            CUDA_VISIBLE_DEVICES=6,7,4,5 python xcsr_experiments/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "xlm_${lang}|(${lr}-${warm})" \
                 --model_name_or_path xlm-mlm-100-1280 \
@@ -61,7 +61,7 @@ elif [ "$MODE" = "all_infer" ]; then
             echo "en-${lang} on ${split}"
             DATA_DIR=/path/to/X-CSQA/${lang}
             MODEL_DIR=/path/to/saved_models_xcsqa/xlm_en
-            CUDA_VISIBLE_DEVICES=7 python methods/run_mcqa.py \
+            CUDA_VISIBLE_DEVICES=7 python xcsr_experiments/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "" \
                 --model_name_or_path ${MODEL_DIR} \

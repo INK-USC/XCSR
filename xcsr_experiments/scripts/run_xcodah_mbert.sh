@@ -21,7 +21,7 @@ if [ "$MODE" = "en_train" ]; then
             echo "$lang - $lr - $warm"
             DATA_DIR=/path/to/X-CODAH/${lang}
             MODEL_DIR=/path/to/saved_models_xcodah/mbert_${lang}
-            CUDA_VISIBLE_DEVICES=6,7 python methods/run_mcqa.py \
+            CUDA_VISIBLE_DEVICES=6,7 python xcsr_experiments/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "xcodah:mbert_${lang}|(${lr}-${warm})" \
                 --model_name_or_path bert-base-multilingual-cased \
@@ -61,7 +61,7 @@ elif [ "$MODE" = "all_infer" ]; then
         do
             DATA_DIR=/path/to/X-CODAH/${lang}
             MODEL_DIR=/path/to/saved_models_xcodah/mbert_en
-            CUDA_VISIBLE_DEVICES=0 python methods/run_mcqa.py \
+            CUDA_VISIBLE_DEVICES=0 python xcsr_experiments/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "" \
                 --model_name_or_path ${MODEL_DIR} \

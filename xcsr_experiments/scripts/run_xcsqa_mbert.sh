@@ -12,7 +12,7 @@ if [ "$MODE" = "en_train" ]; then
 
         DATA_DIR=/path/to/X-CSQA/${lang}
         MODEL_DIR=/path/to/saved_models_xcsqa/mbert_${lang}
-        CUDA_VISIBLE_DEVICES=3,0 python methods/run_mcqa.py \
+        CUDA_VISIBLE_DEVICES=3,0 python xcsr_experiments/run_mcqa.py \
             --task_name xcsr \
             --exp_name mbert_${lang} \
             --model_name_or_path bert-base-multilingual-cased \
@@ -54,7 +54,7 @@ elif [ "$MODE" = "all_infer" ]; then
         do
             DATA_DIR=/path/to/X-CSQA/${lang}
             MODEL_DIR=/path/to/saved_models_xcsqa/mbert_en
-            CUDA_VISIBLE_DEVICES=7  python methods/run_mcqa.py \
+            CUDA_VISIBLE_DEVICES=7  python xcsr_experiments/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "" \
                 --model_name_or_path ${MODEL_DIR} \
@@ -81,7 +81,7 @@ elif [ "$MODE" = "self-infer" ]; then
         do
             DATA_DIR=/path/to/X-CSQA/${lang}
             MODEL_DIR=/path/to/saved_models_xcsqa/mbert_${lang}
-            CUDA_VISIBLE_DEVICES=1,2,3,4,5,6  python methods/run_mcqa.py \
+            CUDA_VISIBLE_DEVICES=1,2,3,4,5,6  python xcsr_experiments/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "" \
                 --model_name_or_path ${MODEL_DIR} \

@@ -2,10 +2,10 @@
 MODE=$1
 if [ "$MODE" = "pretrain" ]; then
     echo "Pre-train the MBERT with MCP examples" 
-    DATA_DIR=/path/to/XCSR
+    DATA_DIR=/path/to/mcp_data
     MODEL_DIR=/path/to/saved_models_xcsqa/mbert_pretrained
     lr=1e-5
-    CUDA_VISIBLE_DEVICES=0,1,2,3  python methods/run_mcqa.py \
+    CUDA_VISIBLE_DEVICES=0,1,2,3  python xcsr_experiments/run_mcqa.py \
         --task_name xcsr \
         --exp_name mbert_pretrain \
         --model_name_or_path bert-base-multilingual-cased \
@@ -46,7 +46,7 @@ elif [ "$MODE" = "xcsqa-finetune" ]; then
             echo "$lang - $lr - $warm"
             DATA_DIR=/path/to/X-CSQA/${lang}
             MODEL_DIR=/path/to/saved_models_xcsqa/mcp_mbert_${lang}
-            CUDA_VISIBLE_DEVICES=4,5  python methods/run_mcqa.py \
+            CUDA_VISIBLE_DEVICES=4,5  python xcsr_experiments/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name xcsr-mbert_${lang} \
                 --model_name_or_path /path/to/saved_models_xcsqa/mbert_pretrained \
@@ -88,7 +88,7 @@ elif [ "$MODE" = "xcsqa-infer" ]; then
         do
             DATA_DIR=/path/to/X-CSQA/${lang}
             MODEL_DIR=/path/to/saved_models_xcsqa/mcp_mbert_en
-            CUDA_VISIBLE_DEVICES=7  python methods/run_mcqa.py \
+            CUDA_VISIBLE_DEVICES=7  python xcsr_experiments/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "" \
                 --model_name_or_path ${MODEL_DIR} \

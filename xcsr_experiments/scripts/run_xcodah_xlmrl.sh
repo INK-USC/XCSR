@@ -21,7 +21,7 @@ if [ "$MODE" = "en_train" ]; then
             echo "$lang - $lr - $warm"
             DATA_DIR=/path/to/X-CODAH/${lang}
             MODEL_DIR=/path/to/saved_models_xcodah/xlmrl_${lang}
-            CUDA_VISIBLE_DEVICES=6,7 python methods/run_mcqa.py \
+            CUDA_VISIBLE_DEVICES=6,7 python xcsr_experiments/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "xcodah:xlmrl_${lang}|(${lr}-${warm})" \
                 --model_name_or_path xlm-roberta-large \
@@ -61,7 +61,7 @@ elif [ "$MODE" = "all_infer" ]; then
         do
             DATA_DIR=/path/to/X-CODAH/${lang}
             MODEL_DIR=/path/to/saved_models_xcodah/xlmrl_en
-            CUDA_VISIBLE_DEVICES=0 python methods/run_mcqa.py \
+            CUDA_VISIBLE_DEVICES=0 python xcsr_experiments/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "" \
                 --model_name_or_path ${MODEL_DIR} \

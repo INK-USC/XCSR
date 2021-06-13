@@ -2,7 +2,7 @@
 
 DATA_DIR=/path/to/X-CODAH/en
 MODEL_DIR=/path/to/saved_models_xcsqa/robertalarge_en
-CUDA_VISIBLE_DEVICES=0,1,2,5  python methods/run_mcqa.py \
+CUDA_VISIBLE_DEVICES=0,1,2,5  python xcsr_experiments/run_mcqa.py \
     --task_name xcsr \
     --model_name_or_path roberta-large \
     --do_train \

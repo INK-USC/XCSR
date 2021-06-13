@@ -8,7 +8,7 @@ if [ "$MODE" = "en_train" ]; then
     do
         DATA_DIR=/path/to/X-CSQA/${lang}
         MODEL_DIR=/path/to/saved_models_xcsqa/xlmrb_${lang}
-        CUDA_VISIBLE_DEVICES=1,2,3,0 python methods/run_mcqa.py \
+        CUDA_VISIBLE_DEVICES=1,2,3,0 python xcsr_experiments/run_mcqa.py \
             --task_name xcsr \
             --exp_name xlmrb_${lang} \
             --model_name_or_path xlm-roberta-base \
@@ -49,7 +49,7 @@ elif [ "$MODE" = "all_infer" ]; then
         do
             DATA_DIR=/path/to/X-CSQA/${lang}
             MODEL_DIR=/path/to/saved_models_xcsqa/xlmrb_en
-            CUDA_VISIBLE_DEVICES=7  python methods/run_mcqa.py \
+            CUDA_VISIBLE_DEVICES=7  python xcsr_experiments/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "" \
                 --model_name_or_path ${MODEL_DIR} \

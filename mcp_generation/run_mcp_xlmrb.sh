@@ -2,10 +2,10 @@
 MODE=$1
 if [ "$MODE" = "pretrain" ]; then
     echo "Pre-train the xlmrb with MCP examples" 
-    DATA_DIR=/path/to/XCSR
+    DATA_DIR=/path/to/mcp_data
     MODEL_DIR=/path/to/saved_models_xlmrb_pretrained
     lr=5e-6
-    CUDA_VISIBLE_DEVICES=7,6,2,1  python methods/run_mcqa.py \
+    CUDA_VISIBLE_DEVICES=7,6,2,1  python xcsr_experiments/run_mcqa.py \
         --task_name xcsr \
         --exp_name xlmrb_pretrain \
         --model_name_or_path xlm-roberta-base \
@@ -53,7 +53,7 @@ elif [ "$MODE" = "xcsqa-finetune" ]; then
             echo "$lang - $lr - $warm"
             DATA_DIR=/path/to/X-CSQA/${lang}
             OUTPUT_DIR=/path/to/saved_models_xcsqa/mcp_xlmrb_${lang}
-            CUDA_VISIBLE_DEVICES=6,7 python methods/run_mcqa.py \
+            CUDA_VISIBLE_DEVICES=6,7 python xcsr_experiments/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "pted+xlmrb_${lang}|(${lr}-${warm})" \
                 --model_name_or_path /path/to/saved_models_xlmrb_pretrained \
@@ -97,7 +97,7 @@ elif [ "$MODE" = "xcsqa-infer" ]; then
         for split in "${splits[@]}" 
         do
             DATA_DIR=/path/to/X-CSQA/${lang} 
-            CUDA_VISIBLE_DEVICES=7 python methods/run_mcqa.py \
+            CUDA_VISIBLE_DEVICES=7 python xcsr_experiments/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "" \
                 --model_name_or_path ${MODEL_DIR} \
@@ -134,7 +134,7 @@ elif [ "$MODE" = "xcodah-finetune" ]; then
             echo "$lang - $lr - $warm"
             DATA_DIR=/path/to/X-CODAH/${lang}
             OUTPUT_DIR=/path/to/saved_models_xcodah/mcp_xlmrb_${lang}
-            CUDA_VISIBLE_DEVICES=0,1 python methods/run_mcqa.py \
+            CUDA_VISIBLE_DEVICES=0,1 python xcsr_experiments/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "xcodah:pted+xlmrb_${lang}|(${lr}-${warm})" \
                 --model_name_or_path /path/to/saved_models_xlmrb_pretrained \
@@ -174,7 +174,7 @@ elif [ "$MODE" = "xcodah-infer" ]; then
         for split in "${splits[@]}" 
         do
             DATA_DIR=/path/to/X-CODAH/${lang} 
-            CUDA_VISIBLE_DEVICES=7 python methods/run_mcqa.py \
+            CUDA_VISIBLE_DEVICES=7 python xcsr_experiments/run_mcqa.py \
                 --task_name xcsr \
                 --exp_name "" \
                 --model_name_or_path ${MODEL_DIR} \
