@@ -16,6 +16,41 @@ Coming soon.
 
 ---
 
+<style>
+.avg{
+    font-weight: 800;
+    color: green;
+}
+
+</style>
+
+<style>
+/* Tooltip container */
+.tooltip {
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+
+
 <!-- ![Mickey](images/all_results.png){: style="text-align:center; display:block; margin-left: auto; margin-right: auto;" width="100%"} -->
 
 ## X-CSQA Results
@@ -26,7 +61,7 @@ Coming soon.
     <th class='model'>Model</th>
     <th>Participant</th>
     <th>Date</th>
-    <th><em>AVG</em></th>
+    <th class="avg"><em>AVG</em></th>
     <th>en</th>
     <th>de</th>
     <th>it</th>
@@ -47,10 +82,10 @@ Coming soon.
 </thead>
 <tbody>
 <tr>
-    <td>MCP(XLM-R-L)</td>
-    <td>USC-INK</td>
+    <td>MCP(RL)</td>
+    <td class="tooltip"><a>USC-INK</a> <span class="tooltiptext">yuchen.lin@usc.edu <br> 2020-06-01</span> </td>
     <td>06/21'</td>
-    <td>58.3</td>
+    <td class="avg">58.3</td>
     <td>69.9</td>
     <td>60.7</td>
     <td>61.9</td>
@@ -69,10 +104,10 @@ Coming soon.
     <td>48.0</td>
 </tr>
 <tr>
-    <td>XLM-R-L</td>
-    <td>USC-INK</td>
+    <td>XLMR-L</td>
+    <td class="tooltip"><a>USC-INK</a> <span class="tooltiptext">yuchen.lin@usc.edu <br> 2020-06-01</span> </td>
     <td>06/21'</td>
-    <td>56.0</td>
+    <td class="avg">56.0</td>
     <td>66.4</td>
     <td>59.6</td>
     <td>59.9</td>
@@ -91,10 +126,10 @@ Coming soon.
     <td>46.6</td>
 </tr>
 <tr>
-    <td>MCP(XLM-R-B)</td>
-    <td>USC-INK</td>
+    <td>MCP(RB)</td>
+    <td class="tooltip"><a>USC-INK</a> <span class="tooltiptext">yuchen.lin@usc.edu <br> 2020-06-01</span> </td>
     <td>06/21'</td>
-    <td>43.6</td>
+    <td class="avg">43.6</td>
     <td>52.2</td>
     <td>47.6</td>
     <td>46.2</td>
@@ -113,10 +148,10 @@ Coming soon.
     <td>36.4</td>
 </tr>
 <tr>
-    <td>XLM-R-B</td>
-    <td>USC-INK</td>
+    <td>XLMR-B</td>
+    <td class="tooltip"><a>USC-INK</a> <span class="tooltiptext">yuchen.lin@usc.edu <br> 2020-06-01</span> </td>
     <td>06/21'</td>
-    <td>42.4</td>
+    <td class="avg">42.4</td>
     <td>50.1</td>
     <td>45.8</td>
     <td>44.4</td>
@@ -136,9 +171,9 @@ Coming soon.
 </tr>
 <tr>
     <td>mBERT</td>
-    <td>USC-INK</td>
+    <td class="tooltip"><a>USC-INK</a> <span class="tooltiptext">yuchen.lin@usc.edu <br> 2020-06-01</span> </td>
     <td>06/21'</td>
-    <td>33.2</td>
+    <td class="avg">33.2</td>
     <td>42.9</td>
     <td>33.1</td>
     <td>33.5</td>
@@ -158,9 +193,9 @@ Coming soon.
 </tr>
 <tr>
     <td>XLM-100</td>
-    <td>USC-INK</td>
+    <td class="tooltip"><a>USC-INK</a> <span class="tooltiptext">yuchen.lin@usc.edu <br> 2020-06-01</span> </td>
     <td>06/21'</td>
-    <td>30.4</td>
+    <td class="avg">30.4</td>
     <td>42.7</td>
     <td>31.5</td>
     <td>32.2</td>
@@ -191,7 +226,7 @@ Coming soon.
     <th class='model'>Model</th>
     <th>Participant</th>
     <th>Date</th>
-    <th><em>AVG</em></th>
+    <th class="avg"><em>AVG</em></th>
     <th>en</th>
     <th>de</th>
     <th>it</th>
@@ -212,10 +247,10 @@ Coming soon.
 </thead>
 <tbody>
 <tr>
-    <td>MCP(XLM-R-L)</td>
-    <td>USC-INK</td>
+    <td>MCP(RL)</td>
+    <td class="tooltip"><a>USC-INK</a> <span class="tooltiptext">yuchen.lin@usc.edu <br> 2020-06-01</span> </td>
     <td>06/21'</td>
-    <td>56.5</td>
+    <td class="avg">56.5</td>
     <td>69.5</td>
     <td>59.3</td>
     <td>60.3</td>
@@ -234,10 +269,10 @@ Coming soon.
     <td>48.8</td>
 </tr>
 <tr>
-    <td>XLM-R-L</td>
-    <td>USC-INK</td>
+    <td>XLMR-L</td>
+    <td class="tooltip"><a>USC-INK</a> <span class="tooltiptext">yuchen.lin@usc.edu <br> 2020-06-01</span> </td>
     <td>06/21'</td>
-    <td>53.8</td>
+    <td class="avg">53.8</td>
     <td>66.7</td>
     <td>56.1</td>
     <td>58.2</td>
@@ -256,10 +291,10 @@ Coming soon.
     <td>45.2</td>
 </tr>
 <tr>
-    <td>MCP(XLM-R-B)</td>
-    <td>USC-INK</td>
+    <td>MCP(RB)</td>
+    <td class="tooltip"><a>USC-INK</a> <span class="tooltiptext">yuchen.lin@usc.edu <br> 2020-06-01</span> </td>
     <td>06/21'</td>
-    <td>41.9</td>
+    <td class="avg">41.9</td>
     <td>52.1</td>
     <td>46.2</td>
     <td>45.6</td>
@@ -278,10 +313,10 @@ Coming soon.
     <td>33.4</td>
 </tr>
 <tr>
-    <td>XLM-R-B</td>
-    <td>USC-INK</td>
+    <td>XLMR-B</td>
+    <td class="tooltip"><a>USC-INK</a> <span class="tooltiptext">yuchen.lin@usc.edu <br> 2020-06-01</span> </td>
     <td>06/21'</td>
-    <td>40.6</td>
+    <td class="avg">40.6</td>
     <td>51.5</td>
     <td>44.1</td>
     <td>42.1</td>
@@ -301,9 +336,9 @@ Coming soon.
 </tr>
 <tr>
     <td>mBERT</td>
-    <td>USC-INK</td>
+    <td class="tooltip"><a>USC-INK</a> <span class="tooltiptext">yuchen.lin@usc.edu <br> 2020-06-01</span> </td>
     <td>06/21'</td>
-    <td>30.4</td>
+    <td class="avg">30.4</td>
     <td>38.8</td>
     <td>29.6</td>
     <td>36.4</td>
@@ -323,9 +358,9 @@ Coming soon.
 </tr>
 <tr>
     <td>XLM-100</td>
-    <td>USC-INK</td>
+    <td class="tooltip"><a>USC-INK</a> <span class="tooltiptext">yuchen.lin@usc.edu <br> 2020-06-01</span> </td>
     <td>06/21'</td>
-    <td>26.7</td>
+    <td class="avg">26.7</td>
     <td>34.3</td>
     <td>26.7</td>
     <td>28.5</td>
