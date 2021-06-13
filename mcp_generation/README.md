@@ -27,7 +27,14 @@ Here we show an example in the `mcp_data.jsonl`:
   ]
 }
 ```
+
+
+## Reformat the MCP data to the MCQA format.
+
+`python mcqa_formatter.py`
+
 ## Run the Pre-Training.
+
 We take the XLM-R-L as an example here.
 
 ```bash 
