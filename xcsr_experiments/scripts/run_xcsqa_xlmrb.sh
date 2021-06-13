@@ -38,7 +38,7 @@ if [ "$MODE" = "en_train" ]; then
             --test_file ${DATA_DIR}/test.jsonl \
             --prediction_output ${DATA_DIR}/results/self_test_xlmrb_result.npy
     done
-elif [ "$MODE" = "zero-shot" ]; then
+elif [ "$MODE" = "all_infer" ]; then
     echo "En-X zero-shot cross-lingual transfer" 
     declare -a langs=("en" "pl" "zh" "de" "es" "fr" "it" "jap" "nl" "pt" "ru" "ar" "sw" "ur" "vi" "hi")
     declare -a langs=("ar" "sw" "ur" "vi" "hi")
