@@ -34,7 +34,7 @@ if [ "$MODE" = "pretrain" ]; then
         --overwrite_cache  
 
 elif [ "$MODE" = "xcsqa-finetune" ]; then
-    echo "Self-Tarin and Self-Test."
+    echo "Start Training"
     declare -a langs=("en" "zh" "de" "es" "fr" "it" "jap" "nl" "pl" "pt" "ru")
     declare -a lrs=("1e-5" "2e-5" "2e-5" "2e-5" "2e-5" "2e-5" "2e-5" "2e-5" "2e-5" "2e-5" "2e-5")
     active_langs=" en "
@@ -44,7 +44,7 @@ elif [ "$MODE" = "xcsqa-finetune" ]; then
         lr=${lrs[$index]}
         if [[ "$active_langs" == *"$lang"* ]]; then 
             echo "$lang - $lr - $warm"
-            DATA_DIR=corpus/CSQA/X-CSQA/${lang}
+            DATA_DIR=/path/to/X-CSQA/${lang}
             MODEL_DIR=/path/to/saved_models_xcsqa/mcp_mbert_${lang}
             CUDA_VISIBLE_DEVICES=4,5  python methods/run_mcqa.py \
                 --task_name xcsr \
@@ -86,7 +86,7 @@ elif [ "$MODE" = "xcsqa-infer" ]; then
     do        
         for split in "${splits[@]}" 
         do
-            DATA_DIR=corpus/CSQA/X-CSQA/${lang}
+            DATA_DIR=/path/to/X-CSQA/${lang}
             MODEL_DIR=/path/to/saved_models_xcsqa/mcp_mbert_en
             CUDA_VISIBLE_DEVICES=7  python methods/run_mcqa.py \
                 --task_name xcsr \

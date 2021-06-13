@@ -1,6 +1,6 @@
 # wandb login [your token here]
 
-DATA_DIR=corpus/CODAH/X-CODAH/en
+DATA_DIR=/path/to/X-CODAH/en
 MODEL_DIR=/path/to/saved_models_xcsqa/robertalarge_en
 CUDA_VISIBLE_DEVICES=0,1,2,5  python methods/run_mcqa.py \
     --task_name xcsr \

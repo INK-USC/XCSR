@@ -1,12 +1,12 @@
 # wandb login [your token here]
 
 MODE=$1
-if [ "$MODE" = "self-train" ]; then
-    echo "Self-Tarin and Self-Test."
+if [ "$MODE" = "en_train" ]; then
+    echo "Start Training"
     declare -a langs=("en" "zh" "de" "es" "fr" "it" "jap" "nl" "pl" "pt" "ru")
     for lang in "${langs[@]}" 
     do
-        DATA_DIR=corpus/CSQA/X-CSQA/${lang}
+        DATA_DIR=/path/to/X-CSQA/${lang}
         MODEL_DIR=/path/to/saved_models_xcsqa/xlmrb_${lang}
         CUDA_VISIBLE_DEVICES=1,2,3,0 python methods/run_mcqa.py \
             --task_name xcsr \
@@ -47,7 +47,7 @@ elif [ "$MODE" = "zero-shot" ]; then
     do        
         for split in "${splits[@]}" 
         do
-            DATA_DIR=corpus/CSQA/X-CSQA/${lang}
+            DATA_DIR=/path/to/X-CSQA/${lang}
             MODEL_DIR=/path/to/saved_models_xcsqa/xlmrb_en
             CUDA_VISIBLE_DEVICES=7  python methods/run_mcqa.py \
                 --task_name xcsr \

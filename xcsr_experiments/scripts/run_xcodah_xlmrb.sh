@@ -1,8 +1,8 @@
 # wandb login [your token here]
 
 MODE=$1
-if [ "$MODE" = "self-train" ]; then
-    echo "Self-Tarin and Self-Test."
+if [ "$MODE" = "en_train" ]; then
+    echo "Start Training"
     declare -a langs=("en" "zh" "de" "es" "fr" "it" "jap" "nl" "pl" "pt" "ru")
     # declare -a lrs=("6e-6" "6e-6" "8e-6" "4e-6" "5e-6" "4e-6" "8e-6" "8e-6" "6e-6" "5e-6" "4e-6")
     # declare -a warms=("100" "100" "100" "100" "300" "100" "100" "100" "100" "300" "100")
@@ -19,7 +19,7 @@ if [ "$MODE" = "self-train" ]; then
 
         if [[ "$active_langs" == *"$lang"* ]]; then
             echo "$lang - $lr - $warm"
-            DATA_DIR=corpus/CODAH/X-CODAH/${lang}
+            DATA_DIR=/path/to/X-CODAH/${lang}
             MODEL_DIR=/path/to/saved_models_xcodah/xlmrb_${lang}
             CUDA_VISIBLE_DEVICES=6,7 python methods/run_mcqa.py \
                 --task_name xcsr \
@@ -59,7 +59,7 @@ elif [ "$MODE" = "zero-shot" ]; then
     do        
         for split in "${splits[@]}" 
         do
-            DATA_DIR=corpus/CODAH/X-CODAH/${lang}
+            DATA_DIR=/path/to/X-CODAH/${lang}
             MODEL_DIR=/path/to/saved_models_xcodah/xlmrb_en
             CUDA_VISIBLE_DEVICES=3 python methods/run_mcqa.py \
                 --task_name xcsr \
