@@ -58,9 +58,8 @@ There are two key advantages of the ***MickeyProbe***: (1) The sentence-level pr
 We construct a multilingual commonsense knowledge corpus, ***MickeyCorpus***, for probing and analyzing ML-LMs via the ***MickeyProbe*** task. 
 We has has 561k sentences in 11 languages (`{en, es, nl, de, fr, zh, it, ru, bg, vi, hi}`), where each probe has 5 sentence candidates --- i.e., $$T=10.2k, K=5, |L|=11$$ in the above figure. 
 The ***MickeyCorpus*** is constructed on top of the OMCS corpus via adversarial distractor generation and machine translation.
-
 Please **download the corpus** [here](https://forms.gle/fCxN1YAyqKpQ4cXNA){: target="_blank"} 
-. We show a particular example here:
+. We show a particular probe (in `en` and `zh` respectively) here:
 
 <table>
 <tr>
