@@ -12,7 +12,6 @@ mathjax: true
 # Leaderboard
 {: .no_toc}
 
-Coming soon.
 
 ---
 
@@ -383,5 +382,5 @@ Coming soon.
 
 
 
-
-
+## Submission Instruction
+Coming soon.
