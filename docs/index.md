@@ -51,7 +51,7 @@ Herein, we provide our resources and method for studying cross-lingual commonsen
 
 - A multi-lingual corpus for ***[MickeyProbe](/mickey)*** task towards analyzing and pre-training ML-LMs.
 - Two ***[X-CSR datasets](/xcsr_datasets)*** (i.e., X-CSQA and X-CODAH) for evaluation.
-- The multilingual contrastive pre-training (MCP) method for improving ML-LMs' performance.
+- The multilingual contrastive pre-training (MCP) method for improving ML-LMs' performance (on Github).
 
 We also build **[X-CSR leaderboard](/leaderboard)** so that people can compare their cross-lingual/multilingual models with each other in a unified evaluation protocol like [X-GLUE](https://microsoft.github.io/XGLUE/){: target="_blank"} and [XTREME](https://sites.research.google/xtreme){: target="_blank"}.
 
