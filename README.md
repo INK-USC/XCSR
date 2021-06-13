@@ -45,3 +45,8 @@ We also build **[X-CSR leaderboard](https://inklab.usc.edu/XCSR/leaderboard)** s
     note={to appear}
 }
 ```
+
+
+## Contact
+This repo is now under active development, and there may be issues caused by refactoring code.
+Please email ***yuchen.lin@usc.edu*** if you have any questions.
