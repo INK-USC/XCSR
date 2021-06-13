@@ -7,12 +7,27 @@ The introduction of the MickeyProbe and the corpus is on our website: https://in
 ## Installation
 
 ```bash
-conda create -n mickey_probe
-conda activate mickey_probe
+conda create -n mickey python=3.7
+conda activate mickey
 pip install ./mlm-scoring
 ```
 
-## Run 
+
+### Sanity Test
+```python
+from mlm.scorers import MLMScorer, MLMScorerPT, LMScorer
+from mlm.models import get_pretrained
+import mxnet as mx
+ctxs = [mx.gpu()] 
+model, vocab, tokenizer = get_pretrained(ctxs, "distilbert-base-multilingual-cased") 
+scorer = MLMScorerPT(model, vocab, tokenizer, ctxs)
+print(scorer.score_sentences(["Hello world", "Hello word"]))  
+# >>> [-4.043210566043854, -18.13702964782715]
+print(scorer.score_sentences(["你好", "我好"]))
+# >>> [-10.507437705993652, -13.866610527038574]
+```
+
+## Run Probing
 
 This is the script for running the probing task for a model in all languages.
 Please read the comments and adjust the code for your own purpose and situation.

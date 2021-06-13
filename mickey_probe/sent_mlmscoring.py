@@ -11,7 +11,8 @@ import argparse
 import random
 import numpy as np
 
- 
+
+
 parser = argparse.ArgumentParser(description='Argparse')
 parser.add_argument('--model_str', default="xlm-roberta-large", type=str)
 parser.add_argument('--input_file', default="", type=str) 
@@ -33,6 +34,7 @@ scorer = MLMScorerPT(model, vocab, tokenizer, ctxs)
 # print(scorer.score_sentences(["Hello world"]))
 # print(scorer.score_sentences(["你好"]))
 # print(scorer.score_sentences(["Hallo Welt"])) 
+
 
 
 with open(args.input_file) as f:
