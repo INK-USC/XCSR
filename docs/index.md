@@ -35,7 +35,7 @@ This is a joint work by Google Research and USC. -->
 
 
 
-***Abstract.***{: .fs-5 .text-red-100} Commonsense reasoning research has so far been limited to English.
+***Abstract.***{: .text-red-100} Commonsense reasoning research has so far been limited to English.
 We aim to evaluate and improve popular multilingual language models (ML-LMs) to help advance commonsense reasoning (CSR) beyond English.
 We collect the ***Mickey Corpus***, consisting of 561k sentences in 11 different languages, which
 can be used for analyzing and improving ML-LMs.

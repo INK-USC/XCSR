@@ -29,7 +29,7 @@ p, li{
 
 [Download the X-CSQA and X-CODAH datasets](https://forms.gle/gVCNgVXr1tyYkDya9){: .btn .btn-green .fs-4 target="_blank"} 
 
-***Introduction.***{: .fs-5 .text-red-100}
+***Introduction.***{: .text-red-100}
 To evaluate *multi-lingual language models* (ML-LMs) for commonsense reasoning in a ***cross-lingual zero-shot transfer*** setting (**X-CSR**), i.e., training in English and test in other languages, 
 we create two benchmark datasets, namely **X-CSQA** and **X-CODAH**. 
 Specifically, we *automatically* translate the original CSQA and CODAH datasets, which only have English versions, to 15 other languages, forming development and test sets for studying X-CSR.
