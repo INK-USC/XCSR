@@ -1,7 +1,7 @@
 wandb login 62f222750d0f623c2db59c5f79cf63cfe1aff1b9
 MODE=$1
 if [ "$MODE" = "pretrain" ]; then
-    echo "Pre-train the MBERT with XCSR probes" 
+    echo "Pre-train the MBERT with MCP examples" 
     DATA_DIR=corpus/XCSR
     MODEL_DIR=/mnt/nfs1/bill/saved_models_xcsqa/mbert_pretrained
     lr=1e-5
