@@ -1,4 +1,4 @@
-wandb login 62f222750d0f623c2db59c5f79cf63cfe1aff1b9
+# wandb login [your token here]
 MODE=$1
 if [ "$MODE" = "pretrain" ]; then
     echo "Pre-train the MBERT with MCP examples" 

@@ -1,4 +1,4 @@
-wandb login 62f222750d0f623c2db59c5f79cf63cfe1aff1b9
+# wandb login [your token here]
 
 DATA_DIR=corpus/CSQA/X-CSQA/en
 MODEL_DIR=/mnt/nfs1/bill/saved_models_xcsqa/robertalarge_en
