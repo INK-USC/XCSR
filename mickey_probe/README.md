@@ -9,7 +9,7 @@ The introduction of the MickeyProbe and the corpus is on our website: https://in
 ```bash
 conda create -n mickey python=3.7
 conda activate mickey
-pip install ./mlm-scoring
+pip install ./mlm-scoring   # we have many local changes.
 ```
 
 
@@ -48,7 +48,7 @@ do
             # "/x" here means we will run x batches on a gpu
             # "+y" here means the starting GPU index is y
             echo ${lang}-${gpu}-${i}
-            CUDA_VISIBLE_DEVICES=${gpu} python sent_mlmscoring.py \
+            CUDA_VISIBLE_DEVICES=${gpu} python mickey_probing.py \
                 --model_str ${MODEL} \
                 --input_file mickey_corpus/mickey_${lang}.jsonl \
                 --result_file probe_results/mickey_${lang}.${MODEL}.${i}.jsonl \
