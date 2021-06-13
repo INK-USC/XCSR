@@ -2,7 +2,7 @@
 MODE=$1
 if [ "$MODE" = "pretrain" ]; then
     echo "Pre-train the xlmrb with MCP examples" 
-    DATA_DIR=corpus/XCSR
+    DATA_DIR=/path/to/XCSR
     MODEL_DIR=/path/to/saved_models_xlmrb_pretrained
     lr=5e-6
     CUDA_VISIBLE_DEVICES=7,6,2,1  python methods/run_mcqa.py \
