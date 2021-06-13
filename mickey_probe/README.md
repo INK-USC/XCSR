@@ -1,8 +1,18 @@
 # Mickey Probe 
 
 
-The mode introduction of the MickeyProbe and the corpus is on our website: https://inklab.usc.edu//XCSR/mickey.
+The introduction of the MickeyProbe and the corpus is on our website: https://inklab.usc.edu//XCSR/mickey.
 
+
+## Installation
+
+```bash
+conda create -n mickey_probe
+conda activate mickey_probe
+pip install ./mlm-scoring
+```
+
+## Run 
 
 This is the script for running the probing task for a model in all languages.
 Please read the comments and adjust the code for your own purpose and situation.
