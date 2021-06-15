@@ -8,9 +8,9 @@ last_modified_date: Jun 5th 2021
 ---
 
 <style>
-p, li{
+/*p, li{
     font-size: 20px;
-}
+}*/
 </style>
  
 # Common Sense Beyond English:  Evaluating and Improving Multilingual Language Models for Commonsense Reasoning
@@ -70,8 +70,8 @@ We also build **[X-CSR leaderboard](/leaderboard)** so that people can compare t
     year = "2021",
     note={to appear}
 }
-```
-{: .fs-6}
+``` 
+{: .fs-3}
 <!-- 
 [The site is under development. Please email [***yuchen.lin@usc.edu***] if you have any questions.](){: .btn .btn-red .fs-4 target="_blank"} -->
 

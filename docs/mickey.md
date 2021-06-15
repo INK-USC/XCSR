@@ -10,9 +10,9 @@ mathjax: true
 ---
 
 <style>
-p, li{
+/*p, li{
     font-size: 20px;
-}
+}*/
 </style>
 
 # MickeyProbe: A ***M***ult***i***lingual task for probing ***c***ommonsense ***k***nowledg***e*** and anal***y***sis.

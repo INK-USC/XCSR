@@ -9,9 +9,9 @@ has_toc: true
 ---
 
 <style>
-p, li{
+/*p, li{
     font-size: 20px;
-}
+}*/
 </style>
 
 # The X-CSR Datasets
@@ -143,4 +143,4 @@ Please cite the papers here if you use the X-CSR datasets:
 }
 
 ```
-{: .fs-5}
+{: .fs-3}
