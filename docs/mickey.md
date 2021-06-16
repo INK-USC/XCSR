@@ -39,7 +39,7 @@ Simply put, one can see MickeyProbe as a multilingual, constrained version of th
 
 ## Task Formulation 
 
-![Mickey](images/mickey.png){: style="text-align:center; display:block; margin-left: auto; margin-right: auto;" width="90%"}
+![Mickey](images/mickey.png){: style="text-align:center; display:block; margin-left: auto; margin-right: auto;" width="100%"}
 
 
 
@@ -103,9 +103,9 @@ Please **download the corpus** [here](https://forms.gle/fCxN1YAyqKpQ4cXNA){: tar
 
 ## Analysis Results 
 
-![Mickey](images/probe_hit1_hist.png){: style="text-align:center; display:block; margin-left: 0; margin-right: auto;" width="85%"}
+![Mickey](images/probe_hit1_hist.png){: style="text-align:center; display:block; margin-left: 0; margin-right: auto;" width="100%"}
 
-![Mickey](images/probe_hit1.png){: style="text-align:center; display:block; margin-left: 0; margin-right: auto;" width="85%"}
+![Mickey](images/probe_hit1.png){: style="text-align:center; display:block; margin-left: 0; margin-right: auto;" width="100%"}
 
 
 ***Sentence Scoring.***{: .text-red-100}
