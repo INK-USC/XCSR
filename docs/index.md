@@ -22,7 +22,7 @@ last_modified_date: Jun 5th 2021
 [Download MickeyCorpus](https://forms.gle/fCxN1YAyqKpQ4cXNA){: target="_blank" .btn .btn-blue .mr-1 .fs-3 }
 [Download X-CSR Datasets](https://forms.gle/gVCNgVXr1tyYkDya9){: target="_blank" .btn .btn-blue .mr-1 .fs-3 }
 <!-- [Video](https://mega.nz/file/5SpQjJKS#J82pfZVDzy3r4aWdNF4R6O8EP5gsepbY20vYihANfgE){: target="_blank" .btn .btn-blue .mr-1 .fs-3 }
-[Slides](/opencsr_naacl_slides.pptx){: target="_blank" .btn .btn-red .mr-1 .fs-3 } -->
+[Slides](opencsr_naacl_slides.pptx){: target="_blank" .btn .btn-red .mr-1 .fs-3 } -->
 </span> 
 
 ---
@@ -51,14 +51,14 @@ It significantly enhances sentence representations, yielding a large performance
 <!-- ## Website  -->
 Herein, we provide our resources and method for studying cross-lingual commonsense reasoning.
 
-- A multi-lingual corpus for ***[MickeyProbe](/mickey)*** task towards analyzing and pre-training ML-LMs.
-- Two ***[X-CSR datasets](/xcsr_datasets)*** (i.e., X-CSQA and X-CODAH) for evaluation.
+- A multi-lingual corpus for ***[MickeyProbe](mickey)*** task towards analyzing and pre-training ML-LMs.
+- Two ***[X-CSR datasets](xcsr_datasets)*** (i.e., X-CSQA and X-CODAH) for evaluation.
 - The multilingual contrastive pre-training (MCP) method for improving ML-LMs' performance (on Github).
 
-We also build **[X-CSR leaderboard](/leaderboard)** so that people can compare their cross-lingual/multilingual models with each other in a unified evaluation protocol like [X-GLUE](https://microsoft.github.io/XGLUE/){: target="_blank"} and [XTREME](https://sites.research.google/xtreme){: target="_blank"}.
+We also build **[X-CSR leaderboard](leaderboard)** so that people can compare their cross-lingual/multilingual models with each other in a unified evaluation protocol like [X-GLUE](https://microsoft.github.io/XGLUE/){: target="_blank"} and [XTREME](https://sites.research.google/xtreme){: target="_blank"}.
 
 
-<!-- ![Intro](/images/intro.png){: style="text-align:left; display:block; margin-left: auto; margin-right: auto;" width="60%"} -->
+<!-- ![Intro](images/intro.png){: style="text-align:left; display:block; margin-left: auto; margin-right: auto;" width="60%"} -->
 
 ## Citation
 
