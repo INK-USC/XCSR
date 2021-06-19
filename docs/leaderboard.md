@@ -383,4 +383,18 @@ mathjax: true
 
 
 ## Submission Instruction
-Coming soon.
+If you have a model for solving X-CSR and would like to make a submission, you can [create a submission](https://xcsr-leaderboard.herokuapp.com/) and evaluate your model for the X-CSR dataset. 
+
+<p><strong>Submission Format</strong></p>
+<p>Please submit a <strong>json</strong> file follows the format below</p>
+```
+{
+    "en": {"be11daf79ced159b": "A", "8abe4f22cf8b2839": "B",..., "7a7bb4af46f9e09c": "C"},
+    "fr": {"be11daf79ced159b": "A", "8abe4f22cf8b2839": "B",..., "16b2a162f9656b79": "C"},
+    "it": {"be11daf79ced159b": "A", "8abe4f22cf8b2839": "B",..., "34bb7281c8e007f9": "C"},
+    ...,
+    "jap": {"be11daf79ced159b": "A", "8abe4f22cf8b2839": "B",..., "16b2a162f9656b79": "C"}
+}
+```
+
+Your submission will be reviewed by the X-CSR team and added to the leaderboard once we verify the results.
