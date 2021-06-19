@@ -53,7 +53,6 @@ mathjax: true
 <!-- ![Mickey](images/all_results.png){: style="text-align:center; display:block; margin-left: auto; margin-right: auto;" width="100%"} -->
 
 ## X-CSQA Results
-
 <table id='XCSQA'>
 <thead>
 <tr>
@@ -215,9 +214,9 @@ mathjax: true
 </tbody>
 </table>
 
+[View Full Table](full_table.html)
 
 ## X-CODAH Results
-
 
 <table id='XCODAH'>
 <thead>
@@ -380,6 +379,7 @@ mathjax: true
 </tbody>
 </table>
 
+[View Full Table](full_table.html)
 
 
 ## Submission Instruction
