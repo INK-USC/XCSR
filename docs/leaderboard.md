@@ -52,6 +52,7 @@ mathjax: true
 
 <!-- ![Mickey](images/all_results.png){: style="text-align:center; display:block; margin-left: auto; margin-right: auto;" width="100%"} -->
 
+
 ## X-CSQA Results
 <table id='XCSQA'>
 <thead>
@@ -214,7 +215,7 @@ mathjax: true
 </tbody>
 </table>
 
-[View Full Table](full_table.html)
+
 
 ## X-CODAH Results
 
@@ -379,15 +380,17 @@ mathjax: true
 </tbody>
 </table>
 
-[View Full Table](full_table.html)
+---
 
+[Enlarge the Tables](full_table.html){: .btn .btn-red}
 
 ## Submission Instruction
-If you have a model for solving X-CSR and would like to make a submission, you can [create a submission](https://xcsr-leaderboard.herokuapp.com/) and evaluate your model for the X-CSR dataset. 
+If you have a model for solving X-CSR and would like to make a submission, you can [***create a submission***](https://xcsr-leaderboard.herokuapp.com/) and evaluate your model for the X-CSR dataset. 
 
-<p><strong>Submission Format</strong></p>
-<p>Please submit a <strong>json</strong> file follows the format below</p>
-```
+
+### Submission Format
+Please submit a ***.json*** file follows the format below
+```json
 {
     "en": {"be11daf79ced159b": "A", "8abe4f22cf8b2839": "B",..., "7a7bb4af46f9e09c": "C"},
     "fr": {"be11daf79ced159b": "A", "8abe4f22cf8b2839": "B",..., "16b2a162f9656b79": "C"},
@@ -397,4 +400,4 @@ If you have a model for solving X-CSR and would like to make a submission, you c
 }
 ```
 
-Your submission will be reviewed by the X-CSR team and added to the leaderboard once we verify the results.
+Your submission will be reviewed by the X-CSR team and added to the leaderboard.
