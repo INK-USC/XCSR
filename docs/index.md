@@ -35,7 +35,7 @@ This is a joint work by Google Research and USC. -->
  
 <!-- ##  -->
 
-
+![Intro](images/authors.png){: style="text-align:left; display:block; margin-left: auto; margin-right: auto;" width="100%"}
 
 ***Abstract.***{: .text-red-100} Commonsense reasoning research has so far been limited to English.
 We aim to evaluate and improve popular multilingual language models (ML-LMs) to help advance commonsense reasoning (CSR) beyond English.
@@ -58,7 +58,7 @@ Herein, we provide our resources and method for studying cross-lingual commonsen
 We also build **[X-CSR leaderboard](leaderboard)** so that people can compare their cross-lingual/multilingual models with each other in a unified evaluation protocol like [X-GLUE](https://microsoft.github.io/XGLUE/){: target="_blank"} and [XTREME](https://sites.research.google/xtreme){: target="_blank"}.
 
 
-<!-- ![Intro](images/intro.png){: style="text-align:left; display:block; margin-left: auto; margin-right: auto;" width="60%"} -->
+
 
 ## Citation
 
