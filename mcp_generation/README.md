@@ -14,10 +14,11 @@ Here we show an example in the `mcp_data.jsonl`:
 {
   "id": "1472b1b7350f4fcb",
   "truth_id": 1,    # the id of the correct assertion.
-  "langs": ["bg", "en", "zh", "ru", "hi", "fr", "vi", "de"], # the lang of each probe in the same order.
+  # the lang of each probe in the same order.
+  "langs": ["bg", "en", "zh", "ru", "hi", "fr", "vi", "de"],
   "probes": [
     "Нима ходите по улиците, за да се страхувате от други хора?",
-    "You would visit other countries because you want to experience other cultures.",   # only this is correct.
+    "You would visit other countries because you want to experience other cultures.", # the only correct one.
     "你会去其他街道, 因为害怕克服其他文化。",
     "Вы бы посетили другие страны, потому что хотите испытать другие таланты.",
     "आप दूसरे सड़कों पर जाते क्योंकि आप अन्य संस्कृतियों पर विजय पाने का भय रखते हैं ।",
