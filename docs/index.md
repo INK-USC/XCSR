@@ -7,6 +7,9 @@ permalink: /
 last_modified_date: Jun 5th 2021
 ---
 
+<link href="http://allfont.net/allfont.css?fonts=agency-fb-bold" rel="stylesheet" type="text/css" />
+
+
 <style>
 /*p, li{
     font-size: 20px;
@@ -14,8 +17,11 @@ last_modified_date: Jun 5th 2021
 </style>
  
 # Common Sense Beyond English:  Evaluating and Improving Multilingual Language Models for Commonsense Reasoning
-{: .fs-7 .fw-700 .text-blue-300 }
+{: .fs-8 .fw-800 .text-green-300 style="font-family: 'Agency FB Bold', arial;"}
+✍️ [***Bill Yuchen Lin***](https://yuchenlin.xyz/){: target="blank"}, [***Seyeon Lee***](https://seyeon-lee.github.io/){: target="blank"}, [***Xiaoyang Qiao***](), [***Xiang Ren***](http://www-bcf.usc.edu/~xiangren/){: target="blank"} \
+🏢 ***in Proc. of ACL 2021***{: .text-red-300}
 <br>
+
 <span class="fs-2">
 [Paper](XCSR_paper.pdf){: target="_blank" .btn .btn-green .mr-1 .fs-3}
 [Github](https://github.com/INK-USC/XCSR/){: target="_blank" .btn .btn-purple .mr-1 .fs-3 }
