@@ -53,8 +53,8 @@ mathjax: true
 <!-- ![Mickey](images/all_results.png){: style="text-align:center; display:block; margin-left: auto; margin-right: auto;" width="100%"} -->
 
 
-## X-CSQA Results
-<table id='XCSQA'>
+## X-CODAH Results
+<table id='XCODAH'>
 <thead>
 <tr>
     <th class='model'>Model</th>
@@ -217,9 +217,9 @@ mathjax: true
 
 
 
-## X-CODAH Results
+## X-CSQA Results
 
-<table id='XCODAH'>
+<table id='XCSQA'>
 <thead>
 <tr>
     <th class='model'>Model</th>
