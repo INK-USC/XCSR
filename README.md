@@ -38,8 +38,7 @@ We also build **[X-CSR leaderboard](https://inklab.usc.edu/XCSR/leaderboard)** s
     title = "Common Sense Beyond English: Evaluating and Improving Multilingual Language Models for Commonsense Reasoning",
     author = "Lin, Bill Yuchen and Lee, Seyeon and Qiao, Xiaoyang and Ren, Xiang",
     booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics (ACL-IJCNLP 2021)",
-    year = "2021",
-    note={to appear}
+    year = "2021"
 }
 ```
 
