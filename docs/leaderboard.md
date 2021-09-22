@@ -81,6 +81,28 @@ mathjax: true
 </thead>
 <tbody>
 <tr>
+    <td>MCP + KG</td>
+    <td class="tooltip"><a>Anonymous</a> <span class="tooltiptext"><br>2021-09-20</span> </td>
+    <td>09/21'</td>
+    <td class="avg">63.7</td>
+    <td>68.9</td>
+    <td>66.4</td>
+    <td>63.7</td>
+    <td>66.5</td>
+    <td>66.6</td>
+    <td>64.6</td>
+    <td>64.0</td>
+    <td>66.9</td>
+    <td>65.4</td>
+    <td>61.9</td>
+    <td>64.1</td>
+    <td>62.1</td>
+    <td>60.2</td>
+    <td>66.2</td>
+    <td>55.5</td>
+    <td>57.0</td>
+</tr>
+<tr>
     <td>MCP(RL)</td>
     <td class="tooltip"><a>USC-INK</a> <span class="tooltiptext">yuchen.lin@usc.edu <br> 2021-06-01</span> </td>
     <td>06/21'</td>
@@ -245,6 +267,28 @@ mathjax: true
 </tr>
 </thead>
 <tbody>
+<tr>
+    <td>MCP + KG</td>
+    <td class="tooltip"><a>Anonymous</a> <span class="tooltiptext"><br>2021-09-20</span> </td>
+    <td>09/21'</td>
+    <td class="avg">59.8</td>
+    <td>68.2</td>
+    <td>62.1</td>
+    <td>61.6</td>
+    <td>64.4</td>
+    <td>64.6</td>
+    <td>61.9</td>
+    <td>58.2</td>
+    <td>60.7</td>
+    <td>58.7</td>
+    <td>55.5</td>
+    <td>60.8</td>
+    <td>56.4</td>
+    <td>56.2</td>
+    <td>63.2</td>
+    <td>51.2</td>
+    <td>53.3</td>
+</tr>
 <tr>
     <td>MCP(RL)</td>
     <td class="tooltip"><a>USC-INK</a> <span class="tooltiptext">yuchen.lin@usc.edu <br> 2021-06-01</span> </td>
