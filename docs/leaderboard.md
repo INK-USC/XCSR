@@ -103,6 +103,28 @@ mathjax: true
     <td>57.0</td>
 </tr>
 <tr>
+    <td>TRT</td>
+    <td class="tooltip"><a>Microsoft Cognitive Services Research </a><span class="tooltiptext">yuwfan@microsoft.com<br>2021-10-15</span> </td>
+    <td>10/21'</td>
+    <td class="avg">61.9</td>
+    <td>69.1</td>
+    <td>65.3</td>
+    <td>62.5</td>
+    <td>64.4</td>
+    <td>64.3</td>
+    <td>64.5</td>
+    <td>61.8</td>
+    <td>64.6</td>
+    <td>63.3</td>
+    <td>57.1</td>
+    <td>62.7</td>
+    <td>57.6</td>
+    <td>61.6</td>
+    <td>64.3</td>
+    <td>52.5</td>
+    <td>55.1</td>
+</tr>
+<tr>
     <td>MCP(RL)</td>
     <td class="tooltip"><a>USC-INK</a> <span class="tooltiptext">yuchen.lin@usc.edu <br> 2021-06-01</span> </td>
     <td>06/21'</td>
@@ -288,6 +310,28 @@ mathjax: true
     <td>63.2</td>
     <td>51.2</td>
     <td>53.3</td>
+</tr>
+<tr>
+    <td>TRT</td>
+    <td class="tooltip"><a>Microsoft Cognitive Services Research </a> <span class="tooltiptext">yuwfan@microsoft.com<br>2021-10-15</span> </td>
+        <td>10/21'</td>
+    <td class="avg">59.8</td>
+    <td>71.0</td>
+    <td>61.2</td>
+    <td>63.0</td>
+    <td>65.1</td>
+    <td>65.1</td>
+    <td>62.8</td>
+    <td>57.8</td>
+    <td>58.9</td>
+    <td>56.3</td>
+    <td>56.1</td>
+    <td>59.4</td>
+    <td>56.2</td>
+    <td>54.7</td>
+    <td>64.6</td>
+    <td>51.0</td>
+    <td>53.9</td>
 </tr>
 <tr>
     <td>MCP(RL)</td>
