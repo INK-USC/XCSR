@@ -80,7 +80,7 @@ mathjax: true
 </tr>
 </thead>
 <tbody>
-<tr>
+<!-- <tr>
     <td>MCP + KG</td>
     <td class="tooltip"><a>Anonymous</a> <span class="tooltiptext"><br>2021-09-20</span> </td>
     <td>09/21'</td>
@@ -101,10 +101,10 @@ mathjax: true
     <td>66.2</td>
     <td>55.5</td>
     <td>57.0</td>
-</tr>
+</tr> -->
 <tr>
     <td>TRT</td>
-    <td class="tooltip"><a>Microsoft Cognitive Services Research </a><span class="tooltiptext">yuwfan@microsoft.com<br>2021-10-15</span> </td>
+    <td class="tooltip"><a href="https://arxiv.org/abs/2110.08462" target="_blank">Microsoft Cognitive Services Research </a><span class="tooltiptext">yuwfan@microsoft.com<br>2021-10-15</span> </td>
     <td>10/21'</td>
     <td class="avg">61.9</td>
     <td>69.1</td>
@@ -289,7 +289,7 @@ mathjax: true
 </tr>
 </thead>
 <tbody>
-<tr>
+<!-- <tr>
     <td>MCP + KG</td>
     <td class="tooltip"><a>Anonymous</a> <span class="tooltiptext"><br>2021-09-20</span> </td>
     <td>09/21'</td>
@@ -310,10 +310,10 @@ mathjax: true
     <td>63.2</td>
     <td>51.2</td>
     <td>53.3</td>
-</tr>
+</tr> -->
 <tr>
     <td>TRT</td>
-    <td class="tooltip"><a>Microsoft Cognitive Services Research </a> <span class="tooltiptext">yuwfan@microsoft.com<br>2021-10-15</span> </td>
+    <td class="tooltip"><a  href="https://arxiv.org/abs/2110.08462" target="_blank">Microsoft Cognitive Services Research </a> <span class="tooltiptext">yuwfan@microsoft.com<br>2021-10-15</span> </td>
         <td>10/21'</td>
     <td class="avg">59.8</td>
     <td>71.0</td>
