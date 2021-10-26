@@ -103,7 +103,7 @@ mathjax: true
     <td>57.0</td>
 </tr> -->
 <tr>
-    <td>TRT</td>
+    <td><a href="https://arxiv.org/abs/2110.08462" target="_blank">TRT</a></td>
     <td class="tooltip"><a href="https://arxiv.org/abs/2110.08462" target="_blank">Microsoft Cognitive Services Research </a><span class="tooltiptext">yuwfan@microsoft.com<br>2021-10-15</span> </td>
     <td>10/21'</td>
     <td class="avg">61.9</td>
@@ -312,7 +312,7 @@ mathjax: true
     <td>53.3</td>
 </tr> -->
 <tr>
-    <td>TRT</td>
+    <td><a href="https://arxiv.org/abs/2110.08462" target="_blank">TRT</a></td>
     <td class="tooltip"><a  href="https://arxiv.org/abs/2110.08462" target="_blank">Microsoft Cognitive Services Research </a> <span class="tooltiptext">yuwfan@microsoft.com<br>2021-10-15</span> </td>
         <td>10/21'</td>
     <td class="avg">59.8</td>
